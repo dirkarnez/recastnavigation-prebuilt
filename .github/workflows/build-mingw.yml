@@ -13,7 +13,7 @@ jobs:
     env:
       libraryName: recastnavigation
       cmakeInstallationPath: recastnavigation-installation
-      tagName: 1.5.1
+      tagName: 8e9c308afd0fc6f7b8d8a76dbb8f905e41cb1425
       mingwTargetZip: recastnavigation-${{ github.ref_name }}-winlibs-x86_64-posix-seh-gcc-12.2.0-mingw-w64ucrt-10.0.0-r4.zip
     steps:
         - uses: actions/checkout@v3
