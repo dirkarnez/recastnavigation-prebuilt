@@ -51,6 +51,9 @@ jobs:
             cmake.exe -G "MinGW Makefiles" ^
             -DCMAKE_BUILD_TYPE=Release ^
             -DBUILD_SHARED_LIBS=OFF ^
+            -DRECASTNAVIGATION_DEMO=OFF ^
+            -DRECASTNAVIGATION_TESTS=OFF ^
+            -DRECASTNAVIGATION_EXAMPLES=OFF ^
             -DCMAKE_INSTALL_PREFIX="cmake-build/${{ env.cmakeInstallationPath }}" -B./cmake-build &&^
             cd cmake-build &&^
             cmake --build . &&^
